@@ -1,14 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mei-Lab Calendar</title>
+    <style>
+        .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        }
+        .calendar-legend {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            gap: 15px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 16px;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body>
-    <h2>Mei-Lab Calendar</h2>
+    <div class="container">
+        <h2>Mei-Lab Calendar</h2>
+        <div class="calendar-legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #673AB7;"></div>
+                <span>メイ先生日程 / Mei-sensei's schedule</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #F8B500;"></div>
+                <span>研究室行事 / Lab schedule</span>
+            </div>
+        </div>
     <div style="display: flex; justify-content: center;">
-        <iframe src="https://calendar.google.com/calendar/embed?src=baiho.kan.d7@tohoku.ac.jp&color=%235229A3&src=c_74c25a76619d34d0bd24b4a772b5aa2c01926824b6fb224efa90bd631851db2a@group.calendar.google.com&color=%237CB342&ctz=Asia/Tokyo"
+        <iframe src="https://calendar.google.com/calendar/embed?src=baiho.kan.d7@tohoku.ac.jp&color=%235229A3&src=c_74c25a76619d34d0bd24b4a772b5aa2c01926824b6fb224efa90bd631851db2a@group.calendar.google.com&color=%23F8B500&ctz=Asia/Tokyo"
             style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
     <!-- 添加 Google Calendar 按钮 -->
